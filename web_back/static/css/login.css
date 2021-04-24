@@ -1,0 +1,137 @@
+/*
+* @Author: xuebingsi
+* @Date:   2019-04-01 13:37:17
+* @Last Modified by:   zhibinm
+* @Last Modified time: 2019-04-01 13:37:19
+*/
+.login-bg{
+    /*background: #eeeeee url() 0 0 no-repeat;*/
+     background:url(../imgs/ag.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.login{
+    margin: 30px auto 0 auto;
+    min-height: 420px;
+    max-width: 420px;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+.login a.logo{
+    display: block;
+    height: 58px;
+    width: 167px;
+    margin: 0 auto 30px auto;
+    background-size: 167px 42px;
+}
+.login .message {
+    margin: 10px 0 0 -58px;
+    padding: 18px 10px 18px 60px;
+    background: #189F92;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+.login #darkbannerwrap {
+    background: url(../images/aiwrap.png);
+    width: 18px;
+    height: 10px;
+    margin: 0 0 20px -58px;
+    position: relative;
+}
+
+.login input[type=text],
+.login input[type=file],
+.login input[type=password],
+.login input[type=email], select {
+    border: 1px solid #DCDEE0;
+    vertical-align: middle;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0px 16px;
+    font-size: 14px;
+    color: #555555;
+    outline:none;
+    width:100%;
+    box-sizing: border-box;
+}
+.login input[type=text]:focus,
+.login input[type=file]:focus,
+.login input[type=password]:focus,
+.login input[type=email]:focus, select:focus {
+    border: 1px solid #27A9E3;
+}
+.login input[type=submit],
+.login input[type=button]{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #189F92;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline:none;
+    width:100%;
+}
+.login hr {
+    background: #fff url() 0 0 no-repeat;
+}
+.login hr.hr15 {
+    height: 15px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.login hr.hr20 {
+    height: 20px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+html, body {width: 100%;height: 100%;overflow: hidden}
+body {background: #009688;}
+body:after {content:'';background-repeat:no-repeat;background-size:cover;-webkit-filter:blur(3px);-moz-filter:blur(3px);-o-filter:blur(3px);-ms-filter:blur(3px);filter:blur(3px);position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;}
+.layui-container {width: 100%;height: 100%;overflow: hidden}
+.admin-login-background {width:360px;height:300px;position:absolute;left:50%;top:40%;margin-left:-180px;margin-top:-100px;}
+.logo-title {text-align:center;letter-spacing:2px;padding:14px 0;}
+.logo-title h1 {color:#009688;font-size:25px;font-weight:bold;}
+.login-form {background-color:#fff;border:1px solid #fff;border-radius:3px;padding:14px 20px;box-shadow:0 0 8px #eeeeee;}
+.login-form .layui-form-item {position:relative;}
+.login-form .layui-form-item label {position:absolute;left:1px;top:1px;width:38px;line-height:36px;text-align:center;color:#d2d2d2;}
+.login-form .layui-form-item input {padding-left:36px;}
+.captcha {width:60%;display:inline-block;}
+.captcha-img {display:inline-block;width:34%;}
+.captcha-img img {height:34px;border:1px solid #e6e6e6;height:36px;width:100%;}
+
+
+.form-container{
+    margin: auto;
+    width: 300px;
+    margin-top: 50px;
+}
+.checkbox{
+    margin-left: 0em;
+}
+.btn-primary{
+    margin-left: 30px;
+}
+.page-title{
+    text-align: center;
+}

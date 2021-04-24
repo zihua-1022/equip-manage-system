@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}图片上传{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/imgs_upload.css') }}">
+<script src="{{url_for('static', filename='js/Front/imgsUpload.js')}}"></script>
+{% endblock %}
+
+{% block logo %}
+<label style="color: white; font-size: 20px;">图片上传</label>
+{% endblock %}
+
+{% block body %}
+<div class="right_div">
+  <div class="right_div1">
+    <div class="layui-form layui-inline  layui-form-pane ">
+      <label style="font-size: 15px;margin-left: 10px;">请选择一个设备：</label>
+      <div class="layui-input-inline  ">
+        <select name="select_equ" lay-filter="aihao" id="select_equ">
+          
+        </select>
+      </div>
+
+      <label style="font-size: 15px;">请选择一个图像文件：</label>
+      <!-- <button id="select" class="btn btn-primary">(重新)（追加）选择图片</button> -->
+      <!-- <button id="add" class="btn btn-primary">选择图片</button> -->           
+      <button type="button" id="add" class="layui-btn">
+      <i class="iconfont nav_right"></i>选择图片</button>
+      <input type="file" name="photo" id="file_input" multiple="multiple"/> <!--用input标签并选择type=file，记得带上multiple，不然就只能单选图片了-->
+      <button type="button" id="upload" class="layui-btn">
+      <i class="iconfont nav_right"></i>上传</button>       
+    </div>
+
+  </div>
+  <div class="image_title">
+    <textarea id="image_title" placeholder="请输入实验名称" type="text/plain" style="width:90%;height:40px;font-size: 15px;"></textarea>
+  </div>
+  <div class="imgs_container">
+  </div>
+  <div class="image_desc">
+    <textarea id="image_desc" placeholder="请输入实验描述" type="text/plain" style="width:90%;height:90px;font-size: 15px;"></textarea>
+  </div>
+</div>
+{% endblock %}

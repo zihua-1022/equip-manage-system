@@ -1,0 +1,40 @@
+.imgs{
+    width: 85vw;
+    height: 41vw;
+    float: left;
+    /* position: absolute; */
+
+}
+#show-div{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+/* 图片显示 */
+#image_li{
+width:100%;
+height: 100%;
+}
+
+#image_li img{ 
+    width: 90%;  
+    height: 80%;  
+    max-width: 100%;  
+    max-height: 100%;      
+    position: absolute;
+    left: 10%;
+    top: 30px;
+}
+.image_title{
+    position: absolute;
+    left: 35%;
+}
+.image_desc{
+    top: 88%;
+    left: 22%;
+    position: absolute;
+}
+

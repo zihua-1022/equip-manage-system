@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="x-admin-sm">
+<head>
+  <meta charset="utf-8">
+  <title>设备信息化后台管理系统</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" >
+  <meta name="description" >
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/xadmin.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+  <script src="{{url_for('static', filename='js/Front/exit.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/layui/layui.js')}}"></script>
+  <script src="{{url_for('static', filename='js/Common/xadmin.js')}}"></script>
+</head>
+<body>
+    <div class="x-nav">
+        <span class="layui-breadcrumb">
+            <a href="">首页</a>
+        </span>
+        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+        </a>
+    </div>
+    
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body ">
+                      <div class="about-content">
+                        <div class="about-big-img">
+                          <div class="text_box">
+                            <div class="text" style="color: black;">
+                              <h3 >光电技术实验室</h3>
+                              <p>物理与光电工程学院光电技术实验室按照“高校+高端研究院所+龙头企业”模式，根植产业，服务产业，创新引领，
+                                开展了光学相干检测和成像技术的研究和转化。目前，本实验室研发了“眼科生物多参数测量仪”、“308准分子激光自动选区白癜风治疗仪”
+                                等产品并产业化，申请了国家专利21件；同时以创新创业需求为导向，实施“1+3”人才培养模式，开办了“光电科技创新班”，
+                                开展以实验室为主要教学基地，以小班快跑的方式进行教学改革，以专利、论文、竞赛等创新成果获取学分，校企双导师制，共同培养创新创业的拔尖人才。
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- footer -->
+                      <div class="footer">
+                        <div class="line"></div>
+                        <p class="copyright">
+                          @2016  ALL  ADHFGJKSHH<br />
+                          E-MAIL:66666666@162.com<br />
+                          TEL:400-888-888
+                        </p>
+                        <div class="icon_box">
+                          <a href="#"><i class="layui-icon layui-icon-login-wechat weixin-icon"></i></a>
+                          <a href="#"><i class="layui-icon layui-icon-login-weibo weibo-icon"></i></a>
+                        </div>
+                      </div>
+                      <!-- end-footer -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

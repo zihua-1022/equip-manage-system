@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="x-admin-sm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>设备管理-后台管理</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/xadmin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme4.css') }}">
+    <script src="{{url_for('static', filename='js/Admin/clickChebox.js')}}"></script>
+    <script src="{{url_for('static', filename='js/Front/exit.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/layui/layui.js')}}"></script>
+    <script src="{{url_for('static', filename='js/Common/xadmin.js')}}"></script>
+    <script src="{{url_for('static', filename='js/Admin/separatePage.js')}}"></script>
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=nSxiPohfziUaCuONe4ViUP2N"></script>  
+    <script src="{{url_for('static', filename='js/Admin/equipManage/equipMent.js')}}"></script>
+</head>
+<body>
+    <div class="x-nav">
+        <span class="layui-breadcrumb">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">设备管理</a>
+            <a><cite>设备页面</cite></a>
+        </span>
+        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+        </a>
+    </div>
+    
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body ">
+                    
+                    <div align="center" style="height:350px; width:100%;" class="icon-div">
+                        <div id="equip_items" style="height:350px;width:80%; margin-top:5px;">
+                            
+                        </div>
+                    </div>
+
+                    </div>
+                    
+                    <div class="layui-card-body">
+                        <div id="container" style="width:100%;height:350px;margin:auto;border:2px solid #ddd;overflow:hidden;">
+                        </div>
+                        <script>
+                            var map = new BMap.Map("container"); //设置底图
+                            var localSearch = new BMap.LocalSearch(map);
+                            map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+                            map.enableContinuousZoom();     //启用地图惯性拖拽，默认禁用
+                            localSearch.enableAutoViewport(); //允许自动调节窗体大小
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="x-admin-sm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>设备信息化后台管理系统</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/xadmin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme4.css') }}">
+    <script src="{{url_for('static', filename='js/Admin/clickChebox.js')}}"></script>
+	<script src="{{url_for('static', filename='js/Front/exit.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/layui/layui.js')}}"></script>
+    <script src="{{url_for('static', filename='js/Common/xadmin.js')}}"></script>
+    <script src="{{url_for('static', filename='js/Admin/separatePage.js')}}"></script>
+	<script src="{{url_for('static', filename='js/Admin/equipManage/equipInfor.js')}}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/equip_info.css') }}">
+</head>
+<body>
+    <div class="x-nav">
+        <span class="layui-breadcrumb">
+			<a href="javascript:;">首页</a>
+			<a href="javascript:;">实验数据页面</a>
+			<a href="javascript:;"><cite>数据详情页面</cite></a>
+        </span>
+        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+        </a>
+    </div>
+    
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="imgs-body" style="padding: 10px 15px; height: 500px;">
+                    
+						<div class="imgs">
+
+							<div id="show-div">
+								<div class="image_title">
+									<p id="image_title" style="font-size: 20px;">实验名称:</p>
+								</div>
+								<div class="image_desc">
+									<p id="image_desc" style=" font-size: 20px;">实验描述:</p>
+								</div>
+								<ul id="image_li">
+									
+								</ul>
+						
+								<div class="left_right">
+									<a id="left_a" onclick="beforeShow()" href="javascript:void(0);"><i style="position:absolute; top:40%;left: 2vw; font-size:65px" class="layui-icon layui-icon-left"></i></a> 
+									<a id="right_a" onclick="afterShow()" href="javascript:void(0);"><i style="position:absolute; top:40%;right: -7vw; font-size:65px" class="layui-icon layui-icon-right"></i></a>
+								</div>	
+							</div>
+						
+							
+						</div>
+
+					</div>            
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/root/anaconda3/envs/nweb_back/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": false,
+    "python.formatting.provider": "yapf",
+    "sqltools.connections": []
+}
