@@ -27,7 +27,6 @@
       }
     }
   };
-
 	Xadmin.prototype.add_tab = function (title,url,is_refresh) {
 		var id = md5(url);//md5每个url
 		//重复点击
